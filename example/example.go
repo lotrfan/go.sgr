@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go.sgr"
+	"github.com/lotrfan/go.sgr"
 )
 
 func main() {
@@ -61,6 +61,12 @@ func main() {
 	fmt.Printf(sgr.MustParseln("doing FramedEncircledOff   [framedEncircledOff]%s"), "foobar")
 	fmt.Printf(sgr.MustParseln("doing Overlined            [overlined]%s"), "foobar")
 	fmt.Printf(sgr.MustParseln("doing OverlinedOff         [overlinedOff]%s"), "foobar")
+
+	fmt.Print(sgr.MustParseln("\n[bold]Aliases:"))
+	sgr.AddAlias("alert", "fg-red bold")
+	sgr.AddAlias("success", "fg-green")
+	fmt.Printf(sgr.MustParseln("alert => bold red          [alert]%s"), "foobar")
+	fmt.Printf(sgr.MustParseln("success => green           [success]%s"), "foobar")
 }
 
 /* vim: set noet: */

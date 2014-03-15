@@ -23,6 +23,10 @@ If you want to use an opening square bracket you should escape it like this:
 	sgr.MustParseln("foo [[ bar")
 
 This will print "foo [ bar".
+
+You can add aliases like so:
+
+	sgr.AddAlias("alert", "fg-red bold")
 */
 package sgr
 
