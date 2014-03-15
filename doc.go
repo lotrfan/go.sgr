@@ -25,3 +25,5 @@ If you want to use an opening square bracket you should escape it like this:
 This will print "foo [ bar".
 */
 package sgr
+
+/* vim: set noet: */

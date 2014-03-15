@@ -62,3 +62,5 @@ func main() {
 	fmt.Printf(sgr.MustParseln("doing Overlined            [overlined]%s"), "foobar")
 	fmt.Printf(sgr.MustParseln("doing OverlinedOff         [overlinedOff]%s"), "foobar")
 }
+
+/* vim: set noet: */

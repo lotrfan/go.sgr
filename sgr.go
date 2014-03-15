@@ -67,3 +67,5 @@ const (
 	Overlined    = "\x1b[53m"
 	OverlinedOff = "\x1b[55m"
 )
+
+/* vim: set noet: */

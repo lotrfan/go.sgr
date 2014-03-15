@@ -32,3 +32,5 @@ func Println(a ...interface{}) (n int, err error) {
 func Printf(format string, a ...interface{}) (n int, err error) {
 	return fmt.Printf(MustParse(format), a...)
 }
+
+/* vim: set noet: */

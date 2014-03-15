@@ -108,3 +108,5 @@ func (cw *ColorWriter) Write(p []byte) (n int, err error) {
 	// all done
 	return n, err
 }
+
+/* vim: set noet: */

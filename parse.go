@@ -176,3 +176,5 @@ func parse(reset bool, newline bool, format string) (string, error) {
 
 	return buf.String(), nil
 }
+
+/* vim: set noet: */
