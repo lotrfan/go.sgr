@@ -130,6 +130,14 @@ func parse(reset bool, newline bool, format string) (string, error) {
 		// found a block
 		block := format[idxStart+1 : idxEnd]
 		fields := strings.Fields(block)
+		for i, field := range fields {
+
+			if sgrString, blockAliasExists := blockAlises[field]; blockAliasExists {
+				aliasFields := strings.Fields(sgrString)
+				fields = append(fields[:i], append(aliasFields, fields[i+1:]...)...)
+				continue
+			}
+		}
 		for _, field := range fields {
 
 			if sgrString, blockCodeExists := blockCodes[field]; blockCodeExists {
